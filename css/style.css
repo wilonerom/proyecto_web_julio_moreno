@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente 
+  font-family: "Roboto Condensed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+  font-family: "Glegoo", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Glegoo", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  PESOS DE LA TIPOGRAFÍA
+
+  Thin 100
+  Extra Light 200
+  Light 300
+  Regular 400
+  Medium 500
+  Semibold 600
+  Bold 700
+  ExtraBold 800
+  Black 900
+*/
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-color: #D8D2C2;
+    height: 100px;
+}
+
+.navbar img {
+    max-width: 200px;
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 8px;
+}
+
+.navbar-menu li{
+    font-size: 1rem;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #262626;
+    font-family: "Glegoo";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline #ca5400;
+    font-weight: 700;
+}
+
+/*HERO BANNER*/
+
+.hero-image{
+    background-image: url(https://images.unsplash.com/photo-1505964253539-4ca5a36328dd?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 83vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.hero-content{
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: #f9f9f9;
+}
+
+.hero-content h1{
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-family: "Glegoo";
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.hero-content button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: 600;
+    color: #262626;
+    background-color: #f9f9f9;
+    transition: background-color 0.5s;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.hero-content button:hover {
+    background-color: #ca5400;
+    color: #f9f9f9;
+}
+
+/* LOS MAS VENDIDOS */
+
+.titulo-topseller {
+    text-align: left;
+    font-family: 'Glegoo';
+    font-size: 2rem;
+    font-weight: 800;
+    color: #241d19;
+    padding: 40px;
+    padding-left: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 30px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #D8D2C2;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Flex' 'sans serif';
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #262626;
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ca5400;
+    color: #f9f9f9;
+}
+
+/*Estilos Categorias*/
+
+.categorias {
+    text-align: center;
+    padding: 20px;
+}
+
+.categorias h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 40px;
+    font-family: 'Glegoo';
+    font-size: 2rem;
+    font-weight: 800;
+    color: #241d19;
+    margin-top: 80px;
+}
+
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.categoria-item {
+    max-width: 336px;
+    max-height: 448px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+.categoria-boton {
+    margin-top: 40px;
+    padding: 15px 50px;
+    font-size: 1.125rem;
+    font-family: 'Roboto Flex';
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #241d19;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.categoria-boton:hover{
+    background-color: #ca5400;
+    color: #f9f9f9;
+}
+
+/* Estilo Reseller Section*/
+
+.reseller-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.reseller-info {
+    width: 50%;
+    text-align: left;
+}
+
+.reseller-info h2 {
+    font-size: 2.5rem;
+    font-family: 'Glegoo';
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #241d19;
+}
+
+.reseller-info p {
+    font-size: 1.25rem;
+    font-family: 'Roboto Flex';
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.reseller-boton {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #241d19;
+    color: #D8D2C2;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-family: 'roboto condensed';
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.reseller-img img {
+    width: 580px;
+    height: 570px;
+    border-radius: 50px;
+}
+
+.reseller-boton:hover {
+    background-color: #ca5400;
+    color: #f9f9f9;
+}
+
+/* Estilo Footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #241d19;
+    color: #D8D2C2;
+    font-size: .875rem;
+}
+
+.logo-footer img {
+    max-height: 30px;
+}
+
+.menu-footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-footer ul li a {
+    text-decoration: none;
+    color: #D8D2C2;
+    font-family: 'Roboto Flex';
+    font-weight: 400;
+}
+
+.copyright-footer {
+    font-size: .875rem;
+    font-family: 'Roboto Flex';
+    font-weight: 300;
+    color: #D8D2C2;
+}
+
+/* ESTILOS GALERIA PRODUCTOS*/
+
+.titulo-productos {
+    font-family: 'Glegoo';
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #241d19;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.galeria-productos img {
+    justify-self: center;
+    border-radius: 10px;
+    max-width: 150px;
+    max-height: 240px;
+}
+
+.producto-content h6 {
+    font-family: 'Roboto Flex';
+    font-weight: 600;
+    margin-top: 10px
+}
+
+.dropdown {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.dropdown .btn {
+    grid-column: 12 / 13;
+    color: #D8D2C2;
+    background-color: #241d19;
+}
+
+.page-link {
+    list-style: none;
+    text-decoration: none;
+    color: #241d19;
+    background-color: #D8D2C2;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    margin-left: 40px;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #241d19;
+    font-family: 'Roboto Flex';
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 322px){
+    .hero-content{
+    text-align: center;
+    color: #f9f9f9;
+    left: 50px;
+    }
+    .hero-content h1{
+        font-size: 1.5625rem;
+    }
+    .hero-content p{
+        font-size: .875rem;
+    }
+}
+
+@media (max-width: 375px){
+    .hero-content{
+    left: 20%;
+    text-align: center;
+    color: #f9f9f9;
+    }
+}
+
+@media (max-width: 425px){
+    .hero-content{
+    left: 20%;
+    text-align: center;
+    color: #f9f9f9;
+    }
+}
+
+@media (max-width: 580px){
+    .navbar-menu li {
+        display: none;
+        }
+}
+
+@media (max-width: 769px){
+    .hero-content{
+        left: 15%;
+        text-align: center;
+        color: #f9f9f9;
+        }
+}
