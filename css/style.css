@@ -40,11 +40,11 @@
     padding-left: 20px;
     padding-right: 25px;
     background-color: #D8D2C2;
-    height: 100px;
+    height: 125px;
 }
 
 .navbar img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .navbar .navbar-menu {
@@ -446,9 +446,9 @@
 /* MEDIA QUERIES */
 
 /* Estilos para pantallas grandes (1024px y superiores) */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     .navbar img {
-        max-width: 150px;
+        max-width: 215px;
     }
 
     .navbar .navbar-menu {
@@ -550,72 +550,193 @@
         padding: 10px 30px;
         font-size: .875rem;
     }
+    .footer {
+        font-size: .75rem;
+    }
+    .menu-footer ul{
+        gap: 5px;
+    }
+    .copyright-footer {
+        font-size: .75rem;
+        font-family: 'Roboto Flex';
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 826px){
+    .footer {
+        font-size: .875rem;
+    }
+    .menu-footer ul {
+        gap: 10px;
+    }
+    .copyright-footer {
+        font-size: .75rem;
+        font-family: 'Roboto Flex';
+        padding-top: 15px;
+    }
 }
 
 /* Estilos para pantallas medianas (768px) */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .navbar {
-        height: auto;
+        height: 120px;
     }
 
     .navbar img {
-        max-width: 150px;
+        max-width: 200px;
     }
 
     .navbar .navbar-menu {
-        gap: 15px;
+        gap: 18px;
+    }
+    
+    .navbar-menu li{
+        font-size: .9375rem;
+    }
+
+    .hero-image{
+         height: 70vh;
+         background-image: linear-gradient(transparent, #000000), url(https://images.unsplash.com/photo-1505964253539-4ca5a36328dd?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     }
 
     .hero-content {
-        top: 40%;
+        text-align: center;
+        left: 15%;
     }
 
     .hero-content h1 {
-        font-size: 30px;
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+        line-height: 45px;
     }
 
     .hero-content p {
-        font-size: 16px;
+        font-size: 1.0625rem;
+        padding-bottom: 20px;
     }
 
     .grid-container {
-        grid-template-columns: repeat(2, 350px);
+        grid-template-columns: repeat(2, 300px);
         gap: 15px;
     }
 
     .card {
-        width: 100%;
-    }
-
-    .card img {
-        height: auto;
+        width: 300px;
     }
 
     .categoria-grid {
-        grid-template-columns: repeat(3, 230px);
+        grid-template-columns: repeat(3, 210px);
     }
     .categoria-item {
-        width: 230px;
+        width: 210px;
     }
 
     .reseller-seccion {
-        flex-direction: column;
+        padding: 40px;
+        margin-bottom: 40px;
     }
 
-/*    .reseller-info {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 30px;
-    }*/
+    .reseller-info h2 {
+        font-size: 1.6875rem;
+        line-height: 35px;
+        letter-spacing: -1px;
+    }
+
+    .reseller-info p {
+        font-size: 15px;
+        letter-spacing: -1px;
+        line-height: 20px;
+    }
 
     .reseller-img img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .logo-footer img {
+        max-height: 60px;
+        padding-bottom: 20px;
     }
 }
 
+@media (max-width: 642px){
+    .navbar {
+        padding-right: 20px;
+    }
+    .hero-content {
+        text-align: center;
+        left: 15%;
+    }
+    .hero-content h1 {
+        font-size: 2.1875rem;
+        letter-spacing: -2px;
+        line-height: 45px;
+    }
+    .hero-content p {
+        font-size: .9375rem;
+        line-height: 25px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 280px);
+        gap: 15px;
+    }
+    .titulo-topseller {
+        font-size: 1.5625rem;
+        margin: 0;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+    .card {
+        width: 280px;
+    }
+    .card-content h3 {
+        font-size: 1.25rem;
+    }    
+    .btn {
+        padding: 10px 20px;
+        font-size: .75rem;
+    }
+    .categorias h2 {
+        font-size: 1.5625rem;
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .categoria-grid {
+        grid-template-columns: repeat(3, 180px);
+    }
+    .categoria-item {
+        width: 180px;
+    }
+    .reseller-seccion {
+        margin-bottom: 40px;
+    }
+    .reseller-info h2 {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: -1px;
+    }
+    .reseller-info p {
+        margin-bottom: 20px;
+    }
+    .reseller-img img{
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 579px){
+    .navbar-menu li a {
+        display: none;
+    }
+    
+}
+
 /* Estilos para pantallas pequeñas (320px) */
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     .navbar img {
         max-width: 100px;
     }
