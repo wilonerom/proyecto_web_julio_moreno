@@ -215,7 +215,7 @@
 .categoria-grid {
     display: grid;
     grid-template-columns: repeat(3, 340px);
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 70px;
@@ -352,6 +352,8 @@
     font-family: 'Roboto Flex';
     font-weight: 300;
     color: #D8D2C2;
+    align-items: center;
+    padding-top: 15px;
 }
 
 .menu-footer a:hover{
@@ -482,6 +484,10 @@
         max-width: 300px;
         max-height: 400px;
     }
+    .reseller-info h2 {
+        font-size: 2.07rem;
+        line-height: 40px;
+    }
 
     .reseller-img img {
         width: 450px;
@@ -489,19 +495,74 @@
     }
 }
 
+@media (max-width: 930px){
+    .categoria-grid {
+        grid-template-columns: repeat(3, 270px);
+        gap: 15px;
+    }
+    .categoria-item {
+        max-width: 270px;
+    }
+    .reseller-info h2 {
+        font-size: 1.75rem;
+        line-height: 37px;
+    }
+    .reseller-info p {
+        font-size: 1.0625rem;
+        line-height: 20px;
+    }
+    .reseller-img img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 838px){
+    .grid-container {
+        grid-template-columns: repeat(2, 360px);
+        gap: 20px;
+    }
+    .card {
+        width: 360px
+    }
+    .categoria-grid {
+        grid-template-columns: repeat(3, 240px);
+    }
+    .reseller-img img {
+        width: 370px;
+        height: 370px;
+    }
+    .reseller-info h2 {
+        font-size: 1.6875rem;
+        line-height: 37px;
+    }
+    .reseller-info p {
+        font-size: 1rem;
+        letter-spacing: -1px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .reseller-img img {
+        width: 350px;
+        height: 350px;
+    }
+    .reseller-boton {
+        padding: 10px 30px;
+        font-size: .875rem;
+    }
+}
+
 /* Estilos para pantallas medianas (768px) */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
         height: auto;
     }
 
     .navbar img {
-        max-width: 130px;
+        max-width: 150px;
     }
 
     .navbar .navbar-menu {
-        flex-direction: column;
         gap: 15px;
     }
 
@@ -533,20 +594,23 @@
     .categoria-grid {
         grid-template-columns: repeat(3, 230px);
     }
+    .categoria-item {
+        width: 230px;
+    }
 
     .reseller-seccion {
         flex-direction: column;
     }
 
-    .reseller-info {
+/*    .reseller-info {
         width: 100%;
         margin-left: 0;
         margin-bottom: 30px;
-    }
+    }*/
 
     .reseller-img img {
-        width: 100%;
-        height: auto;
+        width: 350px;
+        height: 350px;
     }
 }
 
