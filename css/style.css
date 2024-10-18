@@ -394,7 +394,7 @@
 
 .galeria-productos {
     display: grid;
-    grid-template-columns: repeat(6, 150px);
+    grid-template-columns: repeat(4, 300px);
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -405,8 +405,8 @@
 .galeria-productos img {
     justify-self: center;
     border-radius: 10px;
-    max-width: 150px;
-    max-height: 240px;
+    max-width: 300px;
+    max-height: 400px;
 }
 
 .producto-content h6 {
