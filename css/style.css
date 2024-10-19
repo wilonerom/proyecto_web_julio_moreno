@@ -5,30 +5,28 @@
 }
 
 /* Fuente 
-  font-family: "Roboto Condensed", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+font-family: "Roboto Condensed", system-ui;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+font-family: "Glegoo", serif;
+font-weight: 400;
+font-style: normal;
+font-family: "Glegoo", serif;
+font-weight: 700;
+font-style: normal;
 
-  font-family: "Glegoo", serif;
-  font-weight: 400;
-  font-style: normal;
+PESOS DE LA TIPOGRAFÍA
 
-  font-family: "Glegoo", serif;
-  font-weight: 700;
-  font-style: normal;
-
-  PESOS DE LA TIPOGRAFÍA
-
-  Thin 100
-  Extra Light 200
-  Light 300
-  Regular 400
-  Medium 500
-  Semibold 600
-  Bold 700
-  ExtraBold 800
-  Black 900
+Thin 100
+Extra Light 200
+Light 300
+Regular 400
+Medium 500
+Semibold 600
+Bold 700
+ExtraBold 800
+Black 900
 */
 
 /* NAVBAR */
@@ -461,14 +459,63 @@
     margin-bottom: 20px;
 }
 
+.galeria-productos img:hover {
+    filter: brightness(80%)
+}
 
+/*FORMULARIO DE CONTACTO*/
 
+.container-formulario {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 90px;
+}
 
+.container-formulario h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-family: 'Glegoo';
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+ .container-formulario p {
+    font-size: 1.125rem;
+    font-family: 'Roboto Flex';
+    font-weight: 400;
+    margin-bottom: 30px;
+ }
+.container-formulario form .campo, textarea {
+    width: 100%;
+    font-size: .875rem;
+    font-family: 'Roboto Flex';
+    font-weight: 200;
+    /*color: #a5a5a5;*/
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 10px;
+    outline: 0;
+    resize: none;
+}
 
+.container-formulario .btn-enviar-form{
+    padding: 15px 40px;
+    margin: 10px;
+    font-size: 14px;
+    border: none;
+    outline: 0;
+    background-color: #262626;
+    color: #D8D2C2;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
 
 /* MEDIA QUERIES */
-
-
 
 @media (max-width: 1260px){
     .galeria-productos {
@@ -703,8 +750,8 @@
     }
 
     .hero-image{
-         height: 70vh;
-         background-image: linear-gradient(transparent, #000000), url(https://images.unsplash.com/photo-1505964253539-4ca5a36328dd?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        height: 70vh;
+        background-image: linear-gradient(transparent, #000000), url(https://images.unsplash.com/photo-1505964253539-4ca5a36328dd?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     }
 
     .hero-content {
